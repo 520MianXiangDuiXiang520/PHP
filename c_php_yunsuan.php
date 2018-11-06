@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -9,7 +10,6 @@ header("Content-type: text/html; charset=utf-8");
 $getnum1=$_POST['getnum'];
 echo "九九乘法表";
 echo '<br />';
-//九九乘法表运算，空格可以使用中文全角
 function chengfabiao()
 {
     $i1=1;
@@ -27,28 +27,73 @@ function chengfabiao()
         $j1++;
     }
 }
-//奇数偶数判断
-function jioupanduan()
+function sushupanduan($x)
 {
-    $getnum1=$_POST['getnum'];
-    for($i=2;$i<$getnum1;$i++)
+   global $getnum1;//使用全局变量必须用global声明
+    for($i=2;$i<$x;$i++)
     {
-        if($getnum1%$i==0)
-        {
+        if($x%$i==0) {
             echo '<br />';
-            echo $getnum1."是偶数！<br />";
+            return -1;//返回-1为合数
             echo '<br />';
-            exit();
+            break;
         }
-        else
-        {
-            echo '<br />';
-            echo $getnum1."是奇数！<br />";
-            echo '<br />';
-            exit();
+        if($i==$x-1){
+           return 1;//返回1为素数
         }
     }
 }
-chengfabiao();//乘法表
-jioupanduan();//奇数偶数
+//斐波那契数列
+function feibonaqie()
+{
+    $a=1;
+    $b=1;
+    for($i=1;$i<=20;$i++)
+    {
+        echo $a."　　　　　　　　";
+        echo $b."　　　　　　　　";
+        if($i%2==0)
+        {
+            echo "<br />";
+        }
+        $a=$a+$b;
+        $b=$a+$b;
+    }
+
+}
+
+function sushugeshu()
+{
+    global $getnum1;
+    $n=$getnum1;
+    $num=0;
+    for($i=1;$i<$n;$i++)
+    {
+        if(sushupanduan($i)==1)
+        {
+            echo $i."　　　　　";
+            $num++;
+        }
+
+    }
+    echo "<br />";
+    echo "<br />";
+    echo $n."以内有".$num."个素数";
+    echo "<br />";echo "<br />";
+}
+
+chengfabiao();
+"<br />";
+"<br />";
+sushupanduan($getnum1);
+
+"<br />";
+"<br />";
+echo "斐波那契数列<br />";
+"<br />";
+feibonaqie();
+"<br />";
+"<br />";
+sushugeshu();
 ?>
+
