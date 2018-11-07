@@ -291,7 +291,41 @@ function juzhen()
             echo "<br />";
         }
     }
+function fanxu($str)
+{
+    //global $getstr;
+   // $str=$getstr;
+    $strLen=strlen($str);
+    echo "转换前字符串为：".$str."<br />";
+    for($i=0;$i<$strLen-1;$i++)
+    {
+        if($strLen-$i-$i-1>=1)
+        {
+            $p=$str{$i};
+            $str{$i}=$str{$strLen-$i-1};
+            $str{$strLen-$i-1}=$p;
+        }
 
+    }
+    echo "转换后字符串为：".$str."<br />";
+}
+//求PI的值
+function qiuPI()
+{
+    $ppi = 2;
+    $temp = 2;            //初始化pi值和临时值
+	$numerator = 1;
+	$denominator = 3; //初始化分子和分母
+
+	while($temp > 1e-16)                //数列大于指定精度
+    {
+        $temp = $temp*$numerator/$denominator;//计算一个数列的值
+        $ppi += $temp;
+        $numerator++;
+        $denominator += 2;
+    }
+    echo $ppi;
+}
 
 chengfabiao();
 echo "<br />";
@@ -310,7 +344,10 @@ AL_sushu();
 echo "<hr />";
 wanshu(999);
 juzhen();//矩阵旋转
-
-
  sanjiao();
+ //字符串反转
+fanxu("abcdefgh");
+//PI
+qiuPI();
+
 ?>
