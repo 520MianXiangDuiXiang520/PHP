@@ -9,7 +9,7 @@
 error_reporting( E_ALL&~E_NOTICE );
 header("Content-type: text/html; charset=utf-8");
 $getnum1=$_POST['getnum'];
-echo "九九乘法表";
+//echo "九九乘法表";
 echo '<br />';
 function chengfabiao()
 {
@@ -113,6 +113,7 @@ function sushupanduan4($x)//求素数暴力算法1.1
 //斐波那契数列
 function feibonaqie()
 {
+    echo "斐波那契数列<br />";
     $a=1;
     $b=1;
     for($i=1;$i<=20;$i++)
@@ -282,19 +283,18 @@ function juzhen()
                 }
             }
         }
-        for($i=0;$i<4;$i++)
+        for($i=0;$i<8;$i++)
         {
-            for($j=0;$j<4;$j++)
+            for($j=0;$j<8;$j++)
             {
                 echo $a[$i][$j]."　　　";
             }
             echo "<br />";
         }
     }
-function fanxu($str)
+function fanxu()
 {
-    //global $getstr;
-   // $str=$getstr;
+    $str=$_POST['fanxu'];
     $strLen=strlen($str);
     echo "转换前字符串为：".$str."<br />";
     for($i=0;$i<$strLen-1;$i++)
@@ -326,28 +326,71 @@ function qiuPI()
     }
     echo $ppi;
 }
+//计算机
+function jisuanqi()
+{
+   $n1= $_POST["n1"];
+   $n2=$_POST["n2"];
+   $fuhao=$_POST["fuhao"];
+   if($fuhao=="+")
+   {
+       $s=$n1+$n2;
+   }
+   elseif ($fuhao=="-")
+   {
+       $s=$n1-$n2;
+   }
+   elseif ($fuhao=="*")
+   {
+       $s=$n1*$n2;
+   }
+   elseif ($fuhao=="/")
+   {
+       $s=$n1/$n2;
+   }
+   echo $s;
+}
+//回文
+function huiwen()
+{
+    $h=$_POST['huiwen'];
+    echo $h;
+    $h_len=strlen($h);
+    for($i=0;$i<$h_len/2;$i++)
+    {
+        if($h{$i}!=$h{$h_len-$i-1})
+        {
+            break;
+        }
+    }
+    if($h_len/2-$i<1)
+    {
+        echo "是回文！<br />";
+    }
+    else
+    {
+        echo "不是回文！<br />";
+    }
+}
+function chose()
+{
+    $post_chose=$_POST['chose'];
+   switch ($post_chose)
+   {
+       case 1:chengfabiao();break;
+       case 2:juzhen();break;
+       case 3: sanjiao();break;
+       case 4:qiuPI();break;
+       case 5:feibonaqie();break;
+       case 6:AL_sushu();break;
+       case 7:wanshu(1000);break;
+   }
+}
 
-chengfabiao();
-echo "<br />";
-echo "<br />";
-echo "斐波那契数列<br />";
-echo "<br />";
-feibonaqie();
-echo "<br />";
-echo "<br />";
-echo "<hr />";
-sushugeshu();
-echo "埃拉托色尼选筛法求100以内素数";
-echo "<br />";
-echo "<br />";
-AL_sushu();
-echo "<hr />";
-wanshu(999);
-juzhen();//矩阵旋转
- sanjiao();
- //字符串反转
-fanxu("abcdefgh");
-//PI
-qiuPI();
 
+fanxu();
+jisuanqi();
+huiwen();
+echo "<hr />";
+chose();
 ?>
