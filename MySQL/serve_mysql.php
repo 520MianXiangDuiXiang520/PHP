@@ -20,9 +20,14 @@ $getnum=$_POST['choose'];
 switch ($getnum)
 {
     case 1:{
-        header("Location: create_table.php");
+        header("Location: create_table.php");//创建数据表
     }break;
-    case 2:header("Location: add.php");break;
+    case 2:header("Location: add.php");break;//插入记录
+    case 3:header("Location: find_inf.php");break;//查找记录
+    case 4:header("Location: add_col.php");break;//添加列
+    case 5:header("Location: drop_col.php");break;//删除列
+    case 6:header("Location: update_inf.php");break;//修改记录
+    case 7:header("Location: drop_inf.php");break;//删除记录
 }
 ?>
 </body>
