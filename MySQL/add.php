@@ -27,7 +27,7 @@ $user='root';
 $pass='root';
 $link=@mysqli_connect($host,$user,$pass,"t2");
 @mysqli_set_charset($link,"utf8");
-/*
+/* 
 if(!$link)
 {
     echo '数据库连接失败:';
