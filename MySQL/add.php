@@ -30,7 +30,7 @@ $link=@mysqli_connect($host,$user,$pass,"t2");
 /* 
 if(!$link)
 {
-    echo '数据库连接失败:';
+    echo '数据库连接失败!:';
 }
 else
 {
