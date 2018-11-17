@@ -67,6 +67,19 @@ show($str);
 echo "<br />";
 $str=preg_quote($str);
 show($str);
+echo "<hr />";
+
+$pattern_xz_TL='/\d.+zjb/';
+$subject_xz="uuuhytftdr677tz7tdrzjbhbhzjbbhjzjb,,,";
+$matches_xz_TL=array();
+preg_match($pattern_xz_TL,$subject_xz,$matches_xz_TL);
+show($matches_xz_TL);
+echo "<br />";
+$pattern_xz_LD='/\d.+zjb/U';
+$matches_xz_LD=array();
+preg_match($pattern_xz_LD,$subject_xz,$matches_xz_LD);
+show($matches_xz_LD);
+echo "<hr />";
 /***************************************************************************************************************************************************************************************************************************/
 
 function show($var=null)
