@@ -1,0 +1,14 @@
+jsp笔记：
+1.变量定义：var
+2.函数：function
+3.alert:显示一个带有指定消息和ok按钮的警告框
+4.onclick:当按钮被点击时跳转到JSP代码
+5.button：css按钮
+6.JSP输出：document.write();多个量链接用+
+7.JSP输出空格：
+        1.&nbsp
+        2.css样式:<span style='white-space:pre;'>
+8.JSP确定：confirm（）
+9.JSP提问：prompt(val1,val2)
+10.打开新窗口：window.open('')
+11.关闭窗口：window.close('');或<窗口对象>.close();
