@@ -12,3 +12,10 @@ jsp笔记：
 9.JSP提问：prompt(val1,val2)
 10.打开新窗口：window.open('')
 11.关闭窗口：window.close('');或<窗口对象>.close();
+12.DOM操作：
+        1.通过id获取元素 document.getElementById("id")  获取到的是对象
+        2.innerHTML属性：Object.innerHTML用来获取或替换HTML元素的内容
+        3.改变HTML样式：Object.style.property=new style;
+        4.显示和隐藏内容：Object.style.display="none";隐藏
+                         Object.style.display="block";显示
+        5.控制类名：object.className=classname;
