@@ -7,7 +7,7 @@ con.style.color="red";
 }
 function changewidth() {
     con.style.width='300px';
-    con.style.height='200px';
+    con.style.height='250px';
 }
 function non() {
     con.style.display="none";
