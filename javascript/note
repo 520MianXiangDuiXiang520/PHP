@@ -19,3 +19,18 @@ jsp笔记：
         4.显示和隐藏内容：Object.style.display="none";隐藏
                          Object.style.display="block";显示
         5.控制类名：object.className=classname;
+13.数组：
+        1.创建var myarr=new Array(8);
+        2.myarray.length; //获得数组myarray的长度
+14.事件：
+        1.conlick:鼠标单击事件
+        2.onmouseover:鼠标经过事件
+        3.onmouseout:鼠标移开事件
+        4.onchange：文本框改变事件
+        5.onselect：文本框内容被选中事件
+        6.onfocus：光标聚集
+        7.onblur：光标离开
+        8.onload：网页导入
+        9.onunload：关闭网页
+15. <script src="endeasyclass.js"></script>
+16. <link href="endeasyclass.css" rel="stylesheet" type="text/css">
