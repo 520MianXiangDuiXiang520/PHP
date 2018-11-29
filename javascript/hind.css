@@ -1,0 +1,49 @@
+#MENU{
+    background: #10f1;
+    height: 800px;
+    width: 250px;
+    padding:0;
+    margin:0
+}
+#MENU li{
+    line-height: 50px;
+    position: relative;
+   left: 50px;
+    list-style: none;
+}
+#MENU li a{
+    text-decoration: none;
+}
+hr{
+    width: 75%;
+    height: 0px;
+    align: center;
+
+}
+#fff{
+    background: #8f8f8f;
+    height: 50px;
+    width: auto;
+    padding:0;
+    margin:0
+}
+ul{
+    padding:0;
+    margin:0;
+
+}
+input{
+    width: 45px;
+    height: 30px;
+    align-content: center;
+    padding:0;
+    margin:0
+}
+.nume li{
+    height: 50px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 16px;
+}
