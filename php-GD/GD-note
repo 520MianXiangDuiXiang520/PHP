@@ -1,0 +1,1 @@
+imagecreateturecolor($height,$width);//创建一个新画布，参数：宽高
