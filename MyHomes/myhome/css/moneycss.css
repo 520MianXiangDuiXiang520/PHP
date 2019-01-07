@@ -1,0 +1,15 @@
+body{
+    background: #cccccc;
+    color: #FFFFFF;
+}
+div{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+img{
+    width: 165.6px;
+    height: 227.2px;
+}

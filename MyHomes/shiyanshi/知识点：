@@ -1,0 +1,19 @@
+//in_array() 函数搜索数组中是否存在指定的值。
+
+/*弹窗提醒
+exit("<script>
+    alert('只允许上传BMP,JPG,JPEG,PNG,GIF的文件！');
+     location.href='file.php';
+    </script>");
+     */
+
+     $tzname=pathinfo($name,PATHINFO_EXTENSION);
+     pathinfo — 返回文件路径的信息
+
+     //bool mkdir ( string $pathname [, int $mode = 0777 [, bool $recursive = false [, resource $context ]]] )
+             //尝试新建一个由 pathname 指定的目录。默认的 mode 是 0777，意味着最大可能的访问权
+
+             chmod — 改变文件模式
+             bool chmod ( string $filename , int $mode )
+
+             getimagesize($tmp_name)//得到图片信息，不是图片返回false

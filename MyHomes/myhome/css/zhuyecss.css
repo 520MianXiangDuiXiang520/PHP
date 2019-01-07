@@ -1,0 +1,121 @@
+/*页眉样式*/
+nav{
+    background: #ccc;
+    height:50px;
+}
+header {
+    background: #777;
+    height: 700px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    float:right;
+    margin-right: 20px;
+}
+nav ul li a{
+    line-height: 50px;
+    text-decoration: none;
+    height: 50px;
+}
+a{
+    text-decoration: none;
+}
+nav ul #logo{
+    float: left;
+    height: 50px;
+    width: 100px;
+}
+#logo {
+    text-align: center;
+}
+/*****************************/
+#bin .come{
+    max-width: 300px;
+    text-align: center;/*剧中*/
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+#bin.come h1{
+    margin: 0;/*边距*/
+}
+button{
+    border: none;
+    background: red;
+    color: white;
+    width: 90px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+}
+#bin .come .find p{
+    margin-top: 350px;
+}
+#zhengwen .style1{
+    background: #336666;
+    height: 300px;
+    color: #FFF;
+    text-align: center;
+    padding: 35px 0;
+}
+#zhengwen .style1 .sectitle{
+    padding: 30px 0;
+}
+.p li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    height: 60px;
+    width: 60px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+}
+.style2{
+    background-color: darkolivegreen;
+    height: 760px;
+}
+.style2 .d1>div{
+    float: left;
+}
+
+.style2 .img-str{
+    position: relative;
+    top: 60px;
+    width: 20%;
+}
+
+.style2 img{
+    width: 100%;
+}
+
+.style2 .text-sty{
+    max-width: 55%;
+    color: #FFFFFF;
+
+}
+.text-sty{
+    position: relative;
+    left: 27px;
+    top: 40px;
+}
+.style2:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+.style3{
+    background-color: #333366;
+    height: 800px;
+}
+hr{
+    width: 25%;
+}
+

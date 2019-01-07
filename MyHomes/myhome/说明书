@@ -1,0 +1,7 @@
+1.鼠标手势光标：
+div{cursor:default(正常)|help(帮助选择)|wait(忙）|crosshair(精确选择)|text（文本选择）|s-resize(垂直调整)|w-resize(水平调整)se-resize(地脚线调整)|move(移动)|pointer(链接选择)}
+2.背景平铺整个页面
+<body background="http://img04.sogoucdn.com/app/a/100520146/e0c1e3a36e8de836de75caa55118e284
+" style="background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed">
+3.设置透明输入框
+ <input type="text" name="usename" style="background-color: transparent;border:  "/>
